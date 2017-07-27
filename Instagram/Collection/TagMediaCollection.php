@@ -39,7 +39,7 @@ class TagMediaCollection extends \Instagram\Collection\MediaCollection {
      * @access public
      */
     public function getNextMaxTagId() {
-        return isset( $this->pagination->next_max_tag_id ) ? $this->pagination->next_max_tag_id : null;
+        return isset( $this->pagination->min_tag_id ) ? $this->pagination->min_tag_id : null;
     }
 
     /**
